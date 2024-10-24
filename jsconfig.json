@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ES2016",
+    "module": "esnext",
+    "baseUrl": "./",
+    "moduleResolution": "node",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "#/*": [
+        "local_modules/*"
+      ]
+    },
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ES2015"
+    ]
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "src/**/*", "lib/typescript.js",
+  ],
+  "exclude": [
+    "node_modules",
+    // "local_modules",
+    "public/**/*"
+  ]
+}
